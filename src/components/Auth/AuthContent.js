@@ -95,6 +95,10 @@ const AuthContent = ({ isLogin, onAuthenticate }) => {
             <Text>- DeviceId : {DefaultService.getDeviceId()}</Text>
             <Text>- IsLogOn : {LogService.getIsLogOn() ? "true" : "false"}</Text>
             <Text>- LogLevel : {LogService.getLogLevel()}</Text>
+            <Text>- env.isExpoGo : {DefaultService.environment.isExpoGo ? "true" : "false"}</Text>
+            <Text>- env.isDevice : {DefaultService.environment.isDevice ? "true" : "false"}</Text>
+            <Text>- env.isSimulator : {DefaultService.environment.isSimulator ? "true" : "false"}</Text>
+            <Text>- env.isStandalone : {DefaultService.environment.isStandalone ? "true" : "false"}</Text>
           </View>
         )}
       </ViewImageBackground>

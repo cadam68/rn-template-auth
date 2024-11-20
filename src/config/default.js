@@ -48,9 +48,9 @@ const DefaultService = {
   // --- environment properties ---
   environment: {
     isExpoGo: !!Constants.expoVersion, // Running in Expo Go
-    // isExpoGo: Constants.appOwnership === "expo",  (depreciated)
-    isDevice: Device.isDevice, // Running on a physical device (not a simulator)
-    isSimulator: !Device.isDevice && Constants.platform.ios !== undefined,
+    isStandalone: Constants.appOwnership === "standalone", // Ad Hoc or standalone build
+    isDevice: Device.isDevice, // Running on physical device
+    isSimulator: !Device.isDevice && Constants.platform?.ios !== undefined, // Simulator detection
   },
   // --- business properties ---
   getInput: key => {

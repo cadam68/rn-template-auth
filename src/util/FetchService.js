@@ -35,6 +35,7 @@ const fetchFormData = async (method, data, route, sendToken = false, abortCtrl =
   const headers = await getHeaders(sendToken);
   let result, response;
 
+  logger.debug(`perform fetch().method=[${method}].route=[${config.apiUrl}/${route}]`);
   try {
     response = await fetch(`${config.apiUrl}/${route}`, {
       method: data ? "POST" : method ?? "GET",

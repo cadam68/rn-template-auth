@@ -79,8 +79,7 @@ const log = (message, level = -1, module) => {
       }
     }
 
-    if (config.environment.isDevice && !config.environment.isExpoGo && level !== -1) {
-      // if (config.environment.isDevice && level !== -1) { ... } // for test purpose
+    if (!config.environment.isExpoGo && level !== -1) {
       fetchLog(level, module, message)
         .then(_ => {})
         .catch(err => console.error(`[E][LogService] ${err.message}`));

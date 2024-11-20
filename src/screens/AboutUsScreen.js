@@ -9,7 +9,7 @@ const AboutUsScreen = () => {
   };
 
   return (
-    <ViewImageBackground imageBackground={IMAGES.Splash}>
+    <ViewImageBackground imageBackground={IMAGES.Splash} scroll={true}>
       {/* Company Overview */}
       <View style={styles.container}>
         <View style={styles.section}>
