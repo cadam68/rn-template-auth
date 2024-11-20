@@ -1,5 +1,9 @@
 # React Native Skeleton Application
 
+
+![Screenshot of the main screens](assets/screenshots/screenshots.jpg)
+
+
 This project serves as a solid foundation for building mobile applications, providing essential features like:
 
 🔑 **Authentication**:
