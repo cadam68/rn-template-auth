@@ -55,7 +55,7 @@ const log = (message, level = -1, module) => {
   if (!Object.keys(config).length) return; // LogService is not yet ready
 
   if ((isLogOn && level >= currentLogLevel) || level === -1 || level === LogLevel.FATAL) {
-    if (config.environment.isExpoGo || config.environment.isSimulator) {
+    if (config.environment.isExpoGo) {
       const moduleText = module ? `[${module}]` : "";
       const currentTime = format(new Date(), "HH:mm:ss");
 

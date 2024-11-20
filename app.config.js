@@ -10,21 +10,21 @@ export default {
     platforms: ["ios", "android"],
     version: "1.0.0",
     orientation: "portrait",
-    icon: "./assets/icon.png",
+    icon: "./assets/splash.png",
     splash: {
-      image: "./assets/splash.jpg",
+      image: "./assets/splash.png",
       resizeMode: "contain",
       backgroundColor: "#ffffff",
     },
     ios: {
-      icon: "./assets/icon.png",
+      icon: "./assets/splash.png",
       bundleIdentifier: "com.ca-inline.template-auth",
       buildNumber: "1.0.0",
       supportsTablet: true,
     },
     android: {
       adaptiveIcon: {
-        foregroundImage: "./assets/icon.png",
+        foregroundImage: "./assets/splash.png",
         backgroundColor: "#ffffff",
       },
       package: "com.ca_inline.template-auth",

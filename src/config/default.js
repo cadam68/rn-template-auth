@@ -19,7 +19,7 @@ export const IMAGES = {
   SplashScreen_subject: require("./../../assets/images/clavier.png"),
   ErrorScreen: require("./../../assets/images/404.jpg"),
   AdamCyril: require("./../../assets/images/AdamCyril.jpg"),
-  Splash: require("./../../assets/splash.jpg"),
+  Splash: require("./../../assets/splash.png"),
 };
 
 export const init = async () => {
